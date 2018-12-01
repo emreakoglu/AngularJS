@@ -1,3 +1,12 @@
+<div *ngIf="messageService.messages.length">
+  <h2>Messages</h2>
+
+  <button class="clear" (click)="messageService.clear()">clear</button>
+
+  <div *ngFor='let message of messageService.messages'>{{message}}</div>
+</div>
+
+
 <h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
@@ -21,6 +30,7 @@
 </div>
 
 -->
+
 
 <app-hero-detail [hero] = "selectedHero" [heroName] = "selectedHeroName"></app-hero-detail> <!-- hero-detais componenti içinde hero gördüğü her yere selectedHero, heroName gördüğü heryere selectedHeroName koyacak -->
 
