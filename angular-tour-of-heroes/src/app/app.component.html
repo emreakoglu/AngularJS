@@ -1,6 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
   <h1>
     {{ title }}!
+
+    <p>{{ getTitle()}}</p>
+
+    <p>
+      <input readonly type="text" value="{{getTitle()}}"> 
+    </p>
+
+    <p>
+      <input readonly type="text" [value]="getTitle()"> 
+    </p>
+
+    <p>
+      <input readonly type="text" bind-value="getTitle()"> 
+    </p>
+
   </h1>
   <app-heroes></app-heroes>
   <app-messages></app-messages>

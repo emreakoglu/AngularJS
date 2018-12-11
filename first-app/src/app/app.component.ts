@@ -6,7 +6,43 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My First Angular App';
-  
-  name = 'Emre Akoglu';
+  title = 'Rent A Car';
+
+  name = 'Emre';
+
+  availableCar= 10;
+
+  isBoolean= true;
+
+  welcomeMessage: 'Welcome to "Istanbul"';
+
+  guest = {
+    firstName: 'Emre',
+    surname: 'Akoglu'
+  };
+
+  getTitle() {
+    return this.title;
+  }
+
+  retACar() {
+    this.availableCar--;
+  }
+
+  setAvailableCar(availableCarCount) {
+    this.availableCar = availableCarCount;
+  }
+
+  getAvailableCar() {
+    console.log('Arac sayisi azaldi');
+    return this.availableCar;
+  }
+
+  allCarRented() {
+    return this.availableCar < 1;
+  }
+
+  show(event) {
+    console.log('$event:',event);
+  }
 }
