@@ -38,5 +38,7 @@
   <input type="text" [value]="1+2+3"/>    <!--6-->
   <br>
   <input type="text" (input)="show($event.target.value)" /> <!--Klavyeden her input aldığında bu ts tarafında bu metot çalışacak-->
+  <a routerLink="rentacar" routerLinkActive="active">Rent A Car</a>
+  <app-rentacar></app-rentacar>
   </div>
 

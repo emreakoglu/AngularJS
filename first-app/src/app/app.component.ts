@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+import { RentacarComponent } from './rentacar/rentacar.component';
+import { RouterModule, Routes, Router } from '@angular/router';
+
+const appRoutes: Routes = [
+  {path: 'rentacar', component: RentacarComponent}
+];
 
 @Component({
   selector: 'app-root',
@@ -44,5 +50,9 @@ export class AppComponent {
 
   show(event) {
     console.log('$event:',event);
+  }
+
+  redirect2rentacar(){
+
   }
 }

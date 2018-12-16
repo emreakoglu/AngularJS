@@ -1,0 +1,8 @@
+<div style="font-style: italic; font-weight: bold; font-size: 24px">Welcome Our Rent A Car System</div>
+
+<div [style.font-sytle]="guest.isVip ? 'italic' : 'normal'"
+     [style.font-weight]="guest.isVip ? 'bold' : 'normal'"
+     [style.font-size]="guest.isVip ? '24px' : '12px'">{{welcomeMessage}}</div>
+
+
+<div [ngStyle]='styles'>{{welcomeMessage}}</div>
